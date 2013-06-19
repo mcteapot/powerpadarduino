@@ -6,6 +6,7 @@
 
 # Functions
 writeboardonetwo () {
+	# Arduino R1/R2
 	echo ""
 	echo "Converting Arduino to UnoJoy:"
 	
@@ -28,6 +29,7 @@ writeboardonetwo () {
 }
 
 writeboardthree () {
+	# Arduino R3
 	echo ""
 	echo "Converting UnoJoy to Arduino:"
 	
@@ -92,6 +94,7 @@ while [ "$loopVar" == 0 ]; do
 		let "loopVar = 1"
 
 		writeboardthree
+	
 	elif [ "$unoAnswer" == "n" ]; then
 		echo "Arduino R2/R1"
 		let "loopVar = 1"
