@@ -8,8 +8,9 @@
 writeboardonetwo () {
 	# Arduino R1/R2
 	echo ""
-	echo "Converting UnoJoy to Arduino:"
+	echo "CONVERTING R1/R2:"
 	
+	echo "Erasing Board"
 	RETURNDATA=$(dfu-programmer at90usb82 erase 3>&1 1>&2 2>&3 | tee >(cat - >&2))
 	if [ "$RETURNDATA" != "" ]; then
 		echo ""
@@ -18,12 +19,15 @@ writeboardonetwo () {
 		exit 1
 	fi
 
+	echo "Updating Code"
 	sudo dfu-programmer at90usb82 flash Arduino-usbserial-uno.hex
-	sudo dfu-programmer at90usb82 reset
+	echo "Resetting Board"
+	sudo dfu-programmer at90usb82 reset€
 	
 	echo ""
 	echo "SUCCESS: GRAB BEERS!"
 	echo "Disconnect and reconnect Arduino"
+	echo ""
 
 	exit 1
 }
@@ -31,7 +35,7 @@ writeboardonetwo () {
 writeboardthree () {
 	# Arduino R3
 	echo ""
-	echo "Converting UnoJoy to Arduino:"
+	echo "CONVERTING R3:"
 	
 	RETURNDATA=$(dfu-programmer atmega16u2 erase 3>&1 1>&2 2>&3 | tee >(cat - >&2))
 	if [ "$RETURNDATA" != "" ]; then
@@ -53,7 +57,9 @@ writeboardthree () {
 
 # Script start
 echo ""
-
+echo "-------------------------------------"
+echo "*** Converting Arduino to UnoJoy ***"
+echo "-------------------------------------"
 # Checks to see if dfu-programmer is installed on the computer
 if which dfu-programmer >/dev/null; then
     echo "dfu-programmer exists"

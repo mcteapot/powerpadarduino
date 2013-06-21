@@ -15,6 +15,20 @@ This guy made this:
 
 [Cyborg Dino](http://www.cyborgdino.com/): Art, Design & Programming
 
+
+## Info
+
+In addation the project contains an update to the UnoJoy scripts and installs for OSX and Linux. For windows users refer to the default [UnoJoy](https://code.google.com/p/unojoy/) Project.
+
+For a detailed tutorial refer tor article [tutorial](tutorial.com)
+
+## Links
+
+[http://nesdev.com/powerpad.txt](http://nesdev.com/powerpad.txt)
+[https://code.google.com/p/unojoy/wiki/GettingStarted](https://code.google.com/p/unojoy/wiki/GettingStarted)
+[http://arduino.cc/en/Hacking/DFUProgramming8U2](http://arduino.cc/en/Hacking/DFUProgramming8U2)
+
+
 ## License
 
 GPL (General Public License). You can distribute modified versions of the source code, but they must also be open source under the GPL. The game assets (graphics, music, etc.) can be redistributed for free, but cannot be resold without our permission.
