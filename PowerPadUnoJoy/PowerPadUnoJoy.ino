@@ -1,4 +1,12 @@
 
+/* 
+NES POWERPAD to UNOJOY
+By @CyborgDino
+03 June 2013
+LOS ANGELES, USA
+*/
+
+
 #include "UnoJoy.h"
 
 /* INITIALISATION */

@@ -1,8 +1,8 @@
 /* 
-Reading a NES Controller
-By Sebastian Tomczak
-21 July 2007
-Adelaide, Australia
+Reading a NES POWERPAD
+By @CyborgDino
+03 June 2013
+LOS ANGELES, USA
 */
 
 /* INITIALISATION */
