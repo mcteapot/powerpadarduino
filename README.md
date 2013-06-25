@@ -20,6 +20,8 @@ This guy made this:
 
 In addation the project contains an update to the UnoJoy scripts and installs for OSX and Linux. For windows users refer to the default [UnoJoy](https://code.google.com/p/unojoy/) Project.
 
+For Mountan Lion users there is a updated "static-libusb-1.0.9-1.pkg" driver included. In addation it is advised to install "dfu-programme" via macports for all OSX users as advised in the offical arduino DFU programming [tutoiral]((http://arduino.cc/en/Hacking/DFUProgramming8U2). 
+
 For a detailed tutorial refer tor article [tutorial](tutorial.com)
 
 ## Links
