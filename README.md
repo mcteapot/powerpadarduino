@@ -15,6 +15,8 @@ This guy made this:
 
 [Cyborg Dino](http://www.cyborgdino.com/): Art, Design & Programming
 
+"Also consulted a local guru in his dojo"
+
 
 ## Info
 
@@ -27,7 +29,9 @@ For a detailed tutorial refer tor article [tutorial](tutorial.com)
 ## Links
 
 [http://nesdev.com/powerpad.txt](http://nesdev.com/powerpad.txt)
+
 [https://code.google.com/p/unojoy/wiki/GettingStarted](https://code.google.com/p/unojoy/wiki/GettingStarted)
+
 [http://arduino.cc/en/Hacking/DFUProgramming8U2](http://arduino.cc/en/Hacking/DFUProgramming8U2)
 
 

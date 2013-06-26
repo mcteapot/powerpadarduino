@@ -5,8 +5,6 @@ By @CyborgDino
 LOS ANGELES, USA
 */
 
-/* INITIALISATION */
-
 int latch = 2; // set the latch pin
 int clock = 3; // set the clock pin
 int data1 = 4; // set the data in pin
@@ -92,31 +90,24 @@ void loop() {
 }
 
 
-void printBinary(int v, int num_places)
-{
+void printBinary(int v, int num_places) {
     int mask=0, n;
 
-    for (n=1; n<=num_places; n++)
-    {
+    for (n=1; n<=num_places; n++) {
         mask = (mask << 1) | 0x0001;
     }
     v = v & mask;  // truncate v to specified number of places
+    
+    while(num_places) {
 
-    while(num_places)
-    {
-
-        if (v & (0x0001 << num_places-1))
-        {
+        if (v & (0x0001 << num_places-1)) {
              Serial.print("1");
-        }
-        else
-        {
+        } else {
              Serial.print("0");
         }
 
         --num_places;
-        if(((num_places%4) == 0) && (num_places != 0))
-        {
+        if(((num_places%4) == 0) && (num_places != 0)) {
             Serial.print("_");
         }
     }
